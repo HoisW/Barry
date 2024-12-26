@@ -97,7 +97,7 @@ if __name__ == "__main__":
         import matplotlib.pyplot as plt
 
         labels = [
-            r"$\mathrm{Eisenstein\,&\,Hu\,1998}$",
+            r"$\mathrm{Eisenstein\,\&\,Hu\,1998}$",
             r"$\mathrm{Hinton\,et.\,al.\,2017}$",
             r"$\mathrm{Wallisch\,et.\,al.\,2018}$",
             r"$\mathrm{Brieden\,et.\,al.\,2022}$",

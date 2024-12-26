@@ -54,8 +54,7 @@ if __name__ == "__main__":
 
     # Set up the cosmological model for testing
     c = DESI()
-    camb = getCambGenerator(om_resolution=1, h0=c["h"], ob=c["Omega_b"], ns=c["n_s"], mnu=np.sum(c["omega_ncdm"]) * 93.14)
-    camb.omch2s = [(c["Omega_m"] - c["Omega_b"]) * c["h"] ** 2 - np.sum(c["omega_ncdm"])]
+    camb = getCambGenerator(om_resolution=1, h0=c["h"].item(), ob=c["Omega_b"].item(), ns=c["n_s"], mnu=np.sum(c["omega_ncdm"]) * 93.14)    camb.omch2s = [(c["Omega_m"] - c["Omega_b"]) * c["h"] ** 2 - np.sum(c["omega_ncdm"])]
     ks = camb.ks
     pk_lin = camb.get_data()["pk_lin_0"]
 
